@@ -1,0 +1,13 @@
+:root{
+/* CSS HEX */
+--honolulu-blue: #197bbdff;
+--ghost-white: #f2f4ffff;
+--cordovan: #8a3033ff;
+--russian-violet: #0b032dff;
+--melon: #f0b5b3ff;
+}
+
+body{
+    font-family:'Dosis','Martels','Montserrat','Raleway','Bitter';
+    background: var(--russian-violet);
+}
