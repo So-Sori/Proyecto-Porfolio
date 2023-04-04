@@ -1,5 +1,5 @@
 let menuBtnHamburguesa = document.getElementById("menu-btn-hamburguesa");
-let menuBtnCerrar = document.getElementById("menu-btn-cerrar");
+let menuBtnCerrar = document.getElementById("menu-btn-close");
 let menu = document.getElementById("menu");
 
 menuBtnHamburguesa.addEventListener("click", ()=> {
