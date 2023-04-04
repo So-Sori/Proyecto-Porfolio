@@ -15,10 +15,18 @@
     <header id="inicio">
         <nav>
             <div class="contain-logo">
-                <img src="IMG/logo.ico" alt="Logo de Soribel Santos programadora fullstack">
+                <a href="#inicio"><img src="IMG/logo.ico" alt="Logo de Soribel Santos programadora fullstack"></a>
             </div>
 
-            <ul class="menu">
+            <div class="menu-btn-hamburguesa" id="menu-btn-hamburguesa">
+                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24" style="fill:rgb(255, 255, 255);"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+                </svg>
+            </div>
+            <ul class="menu" id="menu">
+                <div class="menu-btn-cerrar" id="menu-btn-cerrar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24" style="fill: 0b032dff;"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path>
+                    </svg>
+                </div>
                 <li class="inicio-on"><a href="#inicio">Inicio</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
@@ -31,18 +39,18 @@
             <div class="banner-textos">
                 <h1 class="banner-titulo">FullStack Developer</h1>
                 <h2 class="banner-mi-nombre">Soribel Santos</h2>
-                <div class="proyecto-btn-container"><button class="btn banner-cv">Curriculum</button></div>
+                <div class="cv-btn-container"><a class="btn banner-cv" href="DOCs\CurriculumSB.pdf" download="Curriculum Soribel Santos.pdf">Curriculum</a></div>
             </div>
 
             <div class="banner-img">
-                <img src="IMG/foto-temporar.webp" alt="Foto personal">
+                <!-- <img src="IMG/sprite principal.png" alt="Foto personal"> -->
             </div>
 
         </div>
     </header>
 
     <div class="skills-container">
-        <img src="IMG/undraw_about_me_re_82bv.svg" alt="Personaje señalando haciando abajo">
+        <img src="IMG/sprite skill.png" alt="Personaje señalando hacia la derecha">
 
         <div class="skills-items"  id="skills">
             <div class="skill-item"></div>
@@ -50,8 +58,9 @@
             <div class="skill-item"></div>
             <div class="skill-item"></div>
             <div class="skill-item"></div>
-
         </div>
+
+        <img src="IMG/sprite skill 2.png" alt="Personaje señalando hacia la  izquierda">
         
     </div>
     
@@ -163,5 +172,6 @@
         </div>
     </footer>
 
+    <script src="JS/main.js"></script>
 </body>
 </html>

@@ -1,15 +1,128 @@
+/* Monsertar */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600&display=swap');
+
+/* Great Vibes */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+
 :root{
 /* CSS HEX */
 --honolulu-blue: #197bbdff;
 --ghost-white: #f2f4ffff;
+--ghost-white-transparent: rgba(242, 244, 255, 0);
 --russian-violet: #0b032dff;
 --melon: #f0b5b3ff;
+--ful-yellow:#FFF500;
+--opacity-yellow:#fff70098;
 }
 
 body{
     font-family:'Dosis','Martels','Montserrat','Raleway','Bitter';
     background: var(--russian-violet);
     color: var(--ghost-white);
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    width: 100%;
+    height: auto;
+    background-color: var(--russian-violet);
+}
+nav{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+nav .contain-logo{
+   max-width: 5rem;
+   margin: 15px;
+}
+nav .contain-logo img{
+    width: 4rem;
+    cursor: pointer;
+}
+nav .menu{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    background-color: var(--ghost-white);
+}
+nav .menu-visible{
+    opacity: 1;
+    visibility: visible;
+}
+nav ul li{
+    list-style: none;
+    margin: 25px;
+    text-align: center;
+    font-size: 1.5em;
+}
+nav ul li a{
+    color: var(--honolulu-blue);
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+nav ul li a:hover{
+    color: var(--ghost-white);
+    background-color: var(--honolulu-blue);
+    padding: 8px 15px;
+    border-radius: 15px;
+}
+.menu .menu-btn-cerrar{
+    width: 100%;
+    display: flex;
+    cursor: pointer;
+    transition: 2s;
+}
+.menu-btn-hamburguesa{
+    width: 20%;
+    height: auto;
+    display: block;
+    cursor: pointer;
+    transition: 2s;
+}
+.banner-container,.banner-textos,.banner-img,.cv-btn-container{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: auto;
+}
+.banner-textos h1{
+    font-size: 3em;
+    text-shadow: -6px 3px var(--opacity-yellow);
+    letter-spacing: 3px;
+}
+.banner-textos h2{
+    font-size: 2.5em;
+    font-family: 'MoonTime','Great Vibes', cursive;
+    color: var(--melon);
+}
+.cv-btn-container{
+    margin: 25px 0;
+}
+.cv-btn-container a{
+    border: none;
+    border-radius: 25px;
+    box-shadow: -10px 6px var(--melon);
+    padding: 10px;
+    background-color: var(--ghost-white);
+    color: var(--russian-violet);
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+.banner-img {
+    width: 100%;
+    height: 400px;
+    margin-top: 50px;
+    background:url("/IMG/sprite\ principal.png") no-repeat center top;
+    background-size: 400px;
 }
 .skills-container .skills-items{
     width: 100%;
@@ -28,4 +141,51 @@ body{
 }
 .ola{
 width: 100%;
+}
+
+@media screen and (min-width:570px){
+    nav .menu-btn-hamburguesa{
+        display: none;
+    }
+    nav .menu .menu-btn-cerrar{
+        display: none;
+    }
+    nav .menu{
+        width: 75%;
+        height: auto;
+        /* background-color: #eecd0f; */
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: row;
+
+        visibility: visible;
+        opacity: 1;
+        background-color:var(--ghost-white-transparent);
+    }
+    nav ul li{
+        width: 100%;
+        font-size: 1em;
+        margin: 5px;
+        padding: 0;
+
+    }
+    nav .contain-logo{
+        width: 100%;
+     }
+    nav .contain-logo img{
+        width: 100%;
+     }
+}
+@media screen and (min-width:1900px){
+    nav ul li{
+        width: 100%;
+        font-size: 3em;
+        margin: 0px;
+        padding: 0;
+    }
+    nav .contain-logo{
+        max-width: 8rem;
+     }
 }
