@@ -145,7 +145,9 @@ nav ul li a:hover{
     display: none;
 }
 .skills-container h2{
-    font-size: 4em;
+    min-width: 2em;
+    max-width: 8;
+    font-size: 6em;
     font-weight: 800;
     text-shadow: 0px 5px  var(--melon), 0 10px var(--ful-yellow);
     color: var(--russian-violet);
@@ -187,14 +189,58 @@ nav ul li a:hover{
 }
 .projects-description-text, .projects-description-text h3{
     width: 100%;
+    padding: 20px;
     line-height: 30px;
+    color: var(--russian-violet);
 }
 .projects-item .projects-description h3{
     text-align: center;
     font-size: 2em;
-    text-shadow: 0px 5px  var(--russian-violet), 0 10px var(--ful-yellow);
-    animation: jump 3s ease-in infinite;
+    text-shadow: 0px 5px  var(--russian-violet);
 }
+.projects-btn{
+    padding: 10px 20px;
+    background-color: var(--russian-violet);
+    color: var(--melon);
+    box-shadow: -10px 6px var(--honolulu-blue);
+}
+.projects-btn-slider{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.projects-btn-slider ul{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.projects-btn-slider ul li{
+    margin: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.projects-btn-slider ul li a{
+    text-decoration: none;
+    color: var(--russian-violet); 
+    cursor: pointer;
+}
+swiper-container {
+    width: 100%;
+    height: 100%;
+    padding: 50px 0;
+}
+
+  swiper-slide {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
 @media screen and (min-width:570px){
     nav .menu-btn-hamburguesa{
