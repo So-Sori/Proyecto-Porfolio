@@ -1,3 +1,4 @@
+// INTERACTIVIDAD BOTONES ABRIR Y CERRAR MENU
 let menuBtnHamburguesa = document.getElementById("menu-btn-hamburguesa");
 let menuBtnCerrar = document.getElementById("menu-btn-close");
 let menu = document.getElementById("menu");

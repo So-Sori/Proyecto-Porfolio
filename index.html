@@ -15,6 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700;800&display=swap" rel="stylesheet">
 </head>
@@ -49,11 +50,11 @@
                 <div class="cv-btn-container"><a class="btn banner-cv" href="DOCs\CurriculumSB.pdf" download="Curriculum Soribel Santos.pdf">Curriculum</a></div>
             </div>
 
-            <div class="banner-img"></div>
+            <div class="banner-img">
+            </div>
 
         </div>
     </header>
-
         <!-- SECCION SKILLS -->
 
     <div class="skills-container">
@@ -118,7 +119,7 @@
             <swiper-container class="mySwiper" space-between="30" pagination="true" pagination-clickable="true">
                 <swiper-slide>
                     <div class="projects-item" id="projects1">
-                        <img src="IMG/logo.ico" alt="projects mobil and desktop version">
+                        <img src="IMG/responsive_prueba.png" alt="projects mobil and desktop version">
                         <div class="projects-description">
                             <h3>Skills</h3>
                             <div class="project-skill">
@@ -139,7 +140,7 @@
                 </swiper-slide>
                 <swiper-slide>
                     <div class="projects-item" id="projects1">
-                        <img src="IMG/logo.ico" alt="projects mobil and desktop version">
+                        <img src="IMG/responsive_prueba.png" alt="projects mobil and desktop version">
                         <div class="projects-description">
                             <h3>Skills</h3>
                             <div class="project-skill">
@@ -160,7 +161,7 @@
                 </swiper-slide>
                 <swiper-slide>
                     <div class="projects-item" id="projects1">
-                        <img src="IMG/logo.ico" alt="projects mobil and desktop version">
+                        <img src="IMG/responsive_prueba.png" alt="projects mobil and desktop version">
                         <div class="projects-description">
                             <h3>Skills</h3>
                             <div class="project-skill">
@@ -181,7 +182,7 @@
                 </swiper-slide>
                 <swiper-slide>
                     <div class="projects-item" id="projects1">
-                        <img src="IMG/logo.ico" alt="projects mobil and desktop version">
+                        <img src="IMG/responsive_prueba.png" alt="projects mobil and desktop version">
                         <div class="projects-description">
                             <h3>Skills</h3>
                             <div class="project-skill">
@@ -207,19 +208,27 @@
 
         <!-- SECCION ABOUT ME -->
     <div class="about-me-container" id="about-me">
-        <h2>About me</h2>
-        <swiper-container class="mySwiper" centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false">
-            <swiper-slide>
-                <img src="IMG/logo.ico" alt="photos of hobbies and tastes">
-            </swiper-slide>
-            <swiper-slide>
-                <img src="IMG/sprite principal.png" alt="photos of hobbies and tastes">
-            </swiper-slide>
-            <swiper-slide>
-                <img src="IMG/logo.ico" alt="photos of hobbies and tastes">
-            </swiper-slide>
-        </swiper-container>
+        <div class="about-me-slider">
+            <swiper-container class="mySwiper" centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false">
+                <swiper-slide>
+                    <img src="IMG/progrmando.png" alt="photos of hobbies and tastes">
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="IMG/leyendo.png" alt="photos of hobbies and tastes">
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="IMG/cafe.png" alt="photos of hobbies and tastes">
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="IMG/gato.png" alt="photos of hobbies and tastes">
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="IMG/music.png" alt="photos of hobbies and tastes">
+                </swiper-slide>
+            </swiper-container>
+        </div>
         <div class="about-me-texts">
+            <h2>About me</h2>
             <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat illum odio unde vero consequatur cumque possimus doloribus? Veritatis porro nihil nulla, assumenda rem cum ex non ratione quibusdam saepe magni.
             </p>
@@ -235,13 +244,13 @@
             <form action="https://formsubmit.co/acef751e2495c332ccb53fb0d29aeab8" method="POST" id="form">
                 <h2>Contact</h2>
                 <label class="label_titulo">Fullname</label>
-                <input type="text" name="Fullname" required>
+                <input type="text" name="Fullname" placeholder="Fullname" required>
 
                 <label class="label_titulo">Email <spam>*</spam></label>
-                <input type="email" name="Gmail" required>
+                <input type="email" name="Gmail"  placeholder="Gmail"required>
 
                 <label class="label_titulo">Message <spam>*</spam></label>
-                <textarea type="text" name="Message" required></textarea>
+                <textarea type="text" name="Message"  placeholder="Message" required></textarea>
 
                 <div class="contact-btn-container">
                     <button class="btn contact-btn">Send</button>
@@ -250,7 +259,7 @@
                 <input type="hidden" name="_captcha" value="false">
             </form>
 
-            <img src="" alt="parting character">
+            <img src="IMG/progrmando.png" alt="parting character">
         </div>
         <div class="contact-more-info">
             <div class="contact-redes">
