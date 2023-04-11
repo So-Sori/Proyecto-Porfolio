@@ -1,0 +1,533 @@
+:root{
+/* CSS HEX */
+--honolulu-blue: #197bbdff;
+--ghost-white: #f2f4ffff;
+--ghost-white-transparent: rgba(242, 244, 255, 0);
+--russian-violet: #0b032dff;
+--melon: #f0b5b3ff;
+--ful-yellow:#FFF500;
+--opacity-yellow:#fff70098;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family:'Dosis','Martels','Montserrat','Raleway','Bitter';
+    background: var(--russian-violet);
+    color: var(--ghost-white);
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    width: 100%;
+    height: auto;
+    background-color: var(--russian-violet);
+}
+nav{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+nav .container-logo{
+   max-width: 5rem;
+   margin: 15px;
+}
+nav .container-logo img{
+    width: 4rem;
+    cursor: pointer;
+}
+nav .menu{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: -25px;
+    right: 0px;
+    transform: translateY(-600px);
+    transition: .5s linear;
+    background-color: var(--ghost-white);
+}
+nav .menu-visible{
+    transform: translateX(0);
+}
+nav ul li{
+    list-style: none;
+    margin: 25px;
+    text-align: center;
+    font-size: 1.5em;
+    text-transform: capitalize;
+}
+nav ul li a{
+    color: var(--honolulu-blue);
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+nav ul li a:hover{
+    color: var(--ghost-white);
+    background-color: var(--honolulu-blue);
+    padding: 8px 15px;
+    border-radius: 15px;
+}
+.menu .menu-btn-close{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.menu .menu-btn-close svg{
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+.menu-btn-hamburguesa{
+    width: 20%;
+    height: auto;
+    display: block;
+    cursor: pointer;
+    transition: 2s;
+}
+.banner-container,.banner-texts,.banner-img,.cv-btn-container{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: auto;
+}
+.banner-texts .banner-tittle{
+    min-width: 2em;
+    font-size: 3em;
+    text-shadow: -6px 0px var(--honolulu-blue);
+    letter-spacing: 3px;
+    padding: 5px;
+}
+.banner-texts .banner-my-name{
+    font-size: 2.5em;
+    font-family: 'Sacramento', cursive;
+    color: var(--melon);
+}
+.cv-btn-container{
+    margin: 25px 0;
+}
+.btn{
+    border: none;
+    border-radius: 25px;
+    box-shadow: -10px 6px var(--melon);
+    padding: 10px;
+    background-color: var(--ghost-white);
+    color: var(--russian-violet);
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+.banner-img {
+    width: 100%;
+    height: 400px;
+    margin-top: 50px;
+    background:url("/IMG/sprite\ principal.png") no-repeat center top;
+    background-size: 400px;
+}
+.skills-container, .skills-items,.skill-item{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    background-color: var(--ghost-white);
+}
+.skill-item{
+    width: 30%;
+    height: auto;
+    margin: 20px;
+}
+
+.skills-container img{
+    display: none;
+}
+.skills-container h2{
+    min-width: 2em;
+    max-width: 6;
+    font-size: 5em;
+    font-weight: 800;
+    text-shadow: 0px 5px  var(--melon), 0 10px var(--ful-yellow);
+    color: var(--russian-violet);
+    text-align: center;
+    transition: .6s;
+    animation: jump 2s infinite ease-in;
+}
+.wave{
+    margin: 0;
+    width: 100%;
+}
+.pink-wave{
+    background-color: var(--ghost-white);
+}
+.projects-container,.projects-slider,.projects-description,.projects-item{
+    width: 100%;
+    height: auto;
+    background-color: var(--melon);
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.projects-item{
+    margin: 20px 0;
+}
+.projects-item img{
+    width: 100%;
+}
+.projects-slider li{
+    list-style: none;
+    margin: 0;
+}
+.project-skill{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 10px;
+}
+.projects-description-text, .projects-description-text h3{
+    width: 100%;
+    padding: 20px;
+    line-height: 30px;
+    color: var(--russian-violet);
+}
+.projects-item .projects-description h3{
+    text-align: center;
+    font-size: 2em;
+    text-shadow: 0px 5px  var(--russian-violet);
+}
+.projects-btn{
+    padding: 10px 20px;
+    background-color: var(--russian-violet);
+    color: var(--melon);
+    box-shadow: -10px 6px var(--honolulu-blue);
+}
+.projects-btn-slider{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.projects-btn-slider ul{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.projects-btn-slider ul li{
+    margin: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.projects-btn-slider ul li a{
+    text-decoration: none;
+    color: var(--russian-violet); 
+    cursor: pointer;
+}
+swiper-container {
+    width: 100%;
+    height: 100%;
+    padding: 50px 0;
+}
+swiper-slide {
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.about-me-container swiper-slide img{
+    width: 100%;
+    height: auto;
+}
+.about-me-container,.about-me-texts{
+    width: 100%;
+    height: 100%;
+}
+.about-me-slider img{
+    width: 100%;
+    height: auto;
+}
+.about-me-container h2{
+    width: 100%;
+    min-width: 2em;
+    max-width: 8;
+    font-size: 4em;
+    font-weight: 800;
+    color: var(--ghost-white);
+    text-shadow: 0px 5px  var(--melon), 0 10px var(--honolulu-blue);
+    text-align: center;
+}
+.about-me-texts p{
+    padding: 20px;
+    text-align: justify;
+}
+footer, form,.contact-more-info,.contact-btn-container,.contact-container{
+    width: 100%;
+    height:auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--honolulu-blue);
+}
+.contact-container img{
+    width: 100%;
+}
+.contact-container{
+    margin: 0;
+    padding: 0 10px;
+}
+form h2{
+    min-width: 2em;
+    max-width: 6em;
+    font-size: 3em;
+    font-weight: 800;
+    color: var(--ghost-white);
+    text-shadow: 0px 5px  var(--melon), 0 10px var(--russian-violet);
+    text-align: center;
+}
+.contact-redes{
+    width: 100%;
+    height:auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.contact-more-info{
+    padding: 20px;
+    background-color: var(--ghost-white);
+    color: var(--russian-violet);
+}
+.contact-copyright{
+    font-weight: 500;
+}
+.label_titulo{
+    width: 80%;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    font-weight: 500;
+    font-style: italic;
+    color: var(--label_color);
+}
+spam{
+    color: red;
+}
+footer form input{
+    width: 80%;
+    height:auto;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+
+    padding: 10px 20px;
+}
+footer form textarea{
+    max-width: 80%;
+    min-width: 50%;
+    max-height:1000px;
+    min-height:100px;
+
+    width: 80%;
+    border-radius: 20px;
+    height: 100px;
+    padding: 20px;
+    outline: none;
+}
+.contact-btn-container{
+    width: 100%;
+    height:auto;
+    margin: 20px 0;
+}
+.contact-btn{
+    width: 30%;
+}
+.redes a{
+    text-decoration: none;
+    margin: 0 10px;
+}
+.blue-wave{
+    background-color: var(--russian-violet);
+}
+
+@media screen and (min-width:570px){
+    nav .menu-btn-hamburguesa{
+        display: none;
+    }
+    nav .menu .menu-btn-close{
+        display: none;
+    }
+    nav .menu{
+        width: 70%;
+        height: auto;
+        transform: translateY(0);
+        top: 0;
+        padding: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-flow: row;
+        background-color: var(--ghost-white-transparent);
+    }
+    nav .menu li{
+        width: 100%;
+        margin: 10px 5px;
+        font-size: 1em;
+        margin: 10px 0;
+        padding: 0;
+        color: var(--ghost-white);
+
+    }
+    nav .menu li a{
+        color: var(--ghost-white);
+
+    }
+    nav .container-logo{
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 20px;
+     }
+    nav .container-logo img{
+        width: 100%;
+     }
+     .banner-container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 20px auto;
+    }
+    .banner-texts .banner-tittle{
+        width: 100%;
+        font-size: 4em;
+    }
+    .banner-texts .banner-my-name{
+        width: 100%;
+        font-size: 2.5em;
+        font-family: 'Sacramento', cursive;
+        color: var(--melon);
+    }
+    .banner-img {
+        width: 100%;
+        height: 500px;
+        margin: 0;
+        background:url("/IMG/sprite\ principal.png") no-repeat center top;
+        background-size: 400px;
+    }
+    .skills-container img{
+        display: block;
+        width: 20%;
+        height: auto;
+    }
+     .skills-items,.skill-item{
+        flex-flow: row wrap;
+    }
+    .projects-item{
+        flex-wrap: nowrap;
+    }
+    .projects-item img{
+        width: 50%;
+    }
+    .projects-description{
+        width: 50%;
+        padding: 20px;
+    }
+    .about-me-container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-me-slider{
+        width: 50%;
+        height: auto;
+    }
+    .about-me-slider img{
+        width: 80%;
+        height: auto;
+    }
+    .about-me-texts{
+        width: 50%;
+        height: 100%;
+    }
+    .about-me-texts p{
+        width: 60%;
+        line-height: 30px;
+        margin: auto;
+    }
+    .contact-container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        padding: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact-container img{
+        width: 50%;
+    }
+    form{
+        width: 50%;
+        justify-content: flex-start;
+    }
+    .contact-more-info,form h2{
+        width: 100%;
+        min-width: 2em;
+        margin: 0px;
+    }
+    .contact-redes,.contact-copyright{
+        width: 50%;
+        text-align: center;
+    }
+    .contact-btn-container{
+        width: 100%;
+    }
+    .contact-btn{
+        width: 25%;
+    }
+    .label_titulo{
+        width: 100%;
+        padding: 10px 20px;
+    }
+    footer form input{
+        width: 85%;
+    }
+    footer form textarea{
+        max-width: 85%;
+        min-width: 85%;
+        max-height:1000px;
+        min-height:100px;
+        width: 100%;
+    }
+}
+@media screen and (min-width:1900px){
+    nav ul li{
+        width: 100%;
+        font-size: 3em;
+        margin: 0px;
+        padding: 0;
+    }
+    nav .container-logo{
+        max-width: 8em;
+     }
+}
+@keyframes jump{
+    50%{
+        text-shadow: 0px 10px  var(--melon), 0 15px var(--ful-yellow);
+        transform: scale(1.1);
+    }
+}
