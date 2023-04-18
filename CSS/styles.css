@@ -54,7 +54,7 @@ nav .menu{
     right: 0px;
     transform: translateY(-600px);
     transition: .5s linear;
-    z-index: 999;
+    z-index: 100;
     background-color: var(--ghost-white);
 }
 nav .menu-visible{
@@ -362,6 +362,14 @@ footer form textarea{
     height: 100px;
     padding: 20px;
     outline: none;
+}
+.warning{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
 }
 .contact-btn-container{
     width: 100%;

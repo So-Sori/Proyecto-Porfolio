@@ -242,7 +242,7 @@
         <div class="about-me-texts">
             <h2>About me</h2>
             <p>
-                Hi 👋🏽😁 I'm Soribel Santos, FullStack programmer. I'm 18 years old not 12😅.<br><br>
+                Hi 👋🏽😁 I'm Soribel Santos, FullStack Developer. I'm 18 years old not 12😅.<br><br>
 
                 I have been studying programming for about 3 years dedicated to both Back-end and Front-end. I am thoughtful, self-taught at the same time I consider myself a responsible and honest person, capable of accepting new challenges and testing myself whenever possible.<br><br>
                 
@@ -264,13 +264,15 @@
             <form id="form">
                 <h2>Contact</h2>
                 <label class="label_titulo">Fullname</label>
-                <input type="text" name="fullname" id="fullname" placeholder="Fullname" value="Soribel" required>
+                <input type="text" name="fullname" id="fullname" placeholder="Fullname" required>
 
                 <label class="label_titulo">Email <spam>*</spam></label>
-                <input type="email" name="email" id="email" placeholder="example@email.com" value="Soribel" required>
+                <input type="email" name="email" id="email" placeholder="example@email.com" required>
 
                 <label class="label_titulo">Message <spam>*</spam></label>
                 <textarea type="text" name="message" id="message" placeholder="Hola,Soy 🐱 y me gustaria trabajar contigo!" required></textarea>
+
+                <p class="warning" id="warning"></p>
 
                 <div class="contact-btn-container">
                     <button type="submit" class="btn contact-btn" id="btn-form">Send</button>
@@ -307,14 +309,6 @@
   <span id="element"></span>
     <!-- Type Library *Animation -->
     <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
-    <!-- Setup and start animation! -->
-    <script>
-        var typed = new Typed('.banner-tittle', {
-        strings: ['FullStack <br> Developer'],
-        typeSpeed: 45,
-        showCursor: false
-        });
-    </script>
     <!-- Animaciones -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
@@ -322,7 +316,9 @@
       </script>
     <!-- FORMULARIO -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-
+    <script type="text/javascript">
+        emailjs.init('2XXUQ3MNo9S3pPrzw');
+    </script>
     <script src="JS/main.js"></script>
 </body>
 </html>
