@@ -127,6 +127,11 @@ nav .menu li a:hover{
     margin: 25px 0;
     transition: .5s;
 }
+.btn a{
+    width: 100%;
+    color: var(--ghost-white);
+    text-decoration: none;
+}
 .btn{
     border: none;
     border-radius: 25px;
@@ -136,6 +141,7 @@ nav .menu li a:hover{
     color: var(--russian-violet);
     font-weight: bold;
     text-decoration: none;
+    text-transform: capitalize;
     cursor: pointer;
     transition: .5s;
 }
@@ -190,6 +196,7 @@ nav .menu li a:hover{
 .wave{
     margin: 0;
     width: 100%;
+    height: auto;
     border: none;
 }
 .pink-wave{
@@ -234,6 +241,7 @@ nav .menu li a:hover{
 }
 .projects-btn{
     padding: 10px 20px;
+    margin: 10px 20px;
     background-color: var(--russian-violet);
     color: var(--melon);
     box-shadow: -10px 6px var(--honolulu-blue);
@@ -492,7 +500,10 @@ footer form textarea{
         color: var(--russian-violet);
     }
     .projects-item img{
-        width: 40%;
+        width: 55%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .projects-description{
         width: 50%;
