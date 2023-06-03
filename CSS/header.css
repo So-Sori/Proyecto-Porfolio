@@ -1,0 +1,114 @@
+/* HOME */
+header{
+    width: 100%;
+    height: auto;
+    background-color: var(--russian-violet);
+}
+nav{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+nav .container-logo{
+   max-width: 5rem;
+   margin: 15px;
+}
+nav .container-logo img{
+    width: 4rem;
+    cursor: pointer;
+}
+nav .menu{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: -25px;
+    right: 0px;
+    transform: translateY(-600px);
+    transition: .5s linear;
+    z-index: 100;
+    background-color: var(--ghost-white);
+}
+nav .menu-visible{
+    transform: translateX(0);
+}
+nav .menu li{
+    list-style: none;
+    margin: 25px;
+    text-align: center;
+    font-size: 1.5em;
+    text-transform: capitalize;
+}
+nav .menu li a{
+    color: var(--honolulu-blue);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: bold;
+    cursor: pointer;
+}
+nav .menu li a:hover{
+    color: var(--ghost-white);
+    background-color: var(--honolulu-blue);
+    padding: 8px 15px;
+    border-radius: 15px;
+}
+.menu .menu-btn-close{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.menu .menu-btn-close i{
+    width: 10%;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+.menu-btn-hamburguesa{
+    width: 20%;
+    height: auto;
+    display: block;
+    cursor: pointer;
+    transition: 2s;
+}
+.bx-x,.bx-menu{
+    color: var(--ghost-white);
+    font-size: 14vw;
+}
+.bx-x{
+    color: var(--russian-violet);
+}
+.banner-container,.banner-texts,.banner-img,.cv-btn-container{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: auto;
+}
+.banner-texts .banner-tittle{
+    font-size: 14vw;
+    text-shadow: -6px 0px var(--honolulu-blue);
+    letter-spacing: 3px;
+    padding: 5px;
+}
+.banner-texts .banner-my-name{
+    font-size: 2.5em;
+    font-family: 'Sacramento', cursive;
+    color: var(--melon);
+}
+.cv-btn-container{
+    margin: 25px 0;
+    transition: .5s;
+}
+.cv-btn-container .btn:hover{
+    box-shadow: -5px 4px var(--honolulu-blue);
+}
+.cv-btn-container:hover{
+    transform: translateY(5px);
+    transition: .5s;
+}
+.banner-img img{
+    width: 90%;
+    height: auto;
+    margin: auto;
+}

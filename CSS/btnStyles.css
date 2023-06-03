@@ -1,0 +1,35 @@
+.btn a{
+    width: 100%;
+    color: var(--ghost-white);
+    text-decoration: none;
+}
+.btn{
+    border: none;
+    border-radius: 25px;
+    box-shadow: -10px 6px var(--melon);
+    padding: 10px;
+    background-color: var(--ghost-white);
+    color: var(--russian-violet);
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: .5s;
+}
+.btn:hover{
+    transition: .5s;
+    transform: translateY(5px);
+}
+.cv-btn-container .btn:hover{
+    box-shadow: -5px 4px var(--honolulu-blue);
+}
+.cv-btn-container:hover{
+    transform: translateY(5px);
+    transition: .5s;
+}
+.projects-btn-container .btn:hover{
+    box-shadow: -5px 4px var(--ghost-white);
+}
+.contact-btn-container .btn:hover{
+    box-shadow: -5px 4px var(--russian-violet);
+}

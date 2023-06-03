@@ -26,6 +26,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <header id="index">
         <nav>
             <div class="container-logo">
@@ -271,7 +272,7 @@
                 <input type="email" name="email" id="email" placeholder="example@email.com" required>
 
                 <label class="label_titulo">Message <spam>*</spam></label>
-                <textarea type="text" name="message" id="message" placeholder="Hola,Soy 🐱 y me gustaria trabajar contigo!" required></textarea>
+                <textarea type="text" name="message" id="message" placeholder="Hi, I'm 🐱 and I'd like to work with you!" required></textarea>
 
                 <p class="warning" id="warning"></p>
 
@@ -297,7 +298,7 @@
                 </div>
             </div>
             <div class="contact-copyright">
-                <p>@2023 - 2024, Soribel S. Brito</p>
+                <p>&copy;2023 - 2024, Soribel S. Brito</p>
             </div>
         </div>
     </footer>
@@ -305,20 +306,20 @@
 
     <!-- Slider -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
-     <!-- Element to contain animated typing -->
-  <span id="element"></span>
-    <!-- Type Library *Animation -->
-    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
-    <!-- Animaciones -->
+     <!-- Type Library *Animation -->
+     <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+     <!-- Animaciones -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-      </script>
-    <!-- FORMULARIO -->
+    </script>
+    <!-- Formulario -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
         emailjs.init('2XXUQ3MNo9S3pPrzw');
     </script>
+    <!-- ALERTAS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="JS/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,6 @@
+@keyframes jump{
+    50%{
+        text-shadow: 0px 10px  var(--melon), 0 15px var(--ful-yellow);
+        transform: scale(1.1);
+    }
+}
