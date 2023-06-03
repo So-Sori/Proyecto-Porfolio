@@ -43,14 +43,17 @@ document.getElementById('form')
     let valid = true;
 
     if(fullname.value.endsWith("  ")) {
+      warning.textContent = "";
       valid = false;
       warning.textContent = `Too much space, on fullname.`;
     } 
     if(message.length < 20){
+      warning.textContent = "";
       valid = false;
       warning.innerHTML = `${warning.textContent}<br>The message is too short.`;
     }
     if(valid){
+      warning.textContent = "";
     emailjs.sendForm(serviceID, templateID, this)
       .then(() => {
         btn.value = 'Send Email';
@@ -59,6 +62,9 @@ document.getElementById('form')
           title: 'Send it!',
           text: `Thank you for you message!`,
         })
+        fullname.value = "";
+        message.value = "";
+        email.value = "";
       }, (err) => {
         btn.value = 'Send Email';
         Swal.fire({
