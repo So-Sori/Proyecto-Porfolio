@@ -57,14 +57,13 @@ document.getElementById('form')
     emailjs.sendForm(serviceID, templateID, this)
       .then(() => {
         btn.value = 'Send Email';
+        fullname.value = "";
+        document.getElementById('message').value = "";
         Swal.fire({
           icon: 'success',
           title: 'Send it!',
           text: `Thank you for you message!`,
         })
-        fullname.value = "";
-        message.value = "";
-        email.value = "";
       }, (err) => {
         btn.value = 'Send Email';
         Swal.fire({

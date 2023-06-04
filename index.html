@@ -26,7 +26,6 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <header id="index">
         <nav>
             <div class="container-logo">
@@ -51,7 +50,7 @@
             <div class="banner-texts">
                 <h1 class="banner-tittle"></h1>
                 <h2 class="banner-my-name">Soribel Santos</h2>
-                <div class="cv-btn-container"><a class="btn banner-cv" href="DOCs\CurriculumSB.pdf" download="Curriculum Soribel Santos.pdf">Curriculum</a></div>
+                <div class="cv-btn-container"><a class="btn banner-cv" href="DOCs\CurriculumSB.pdf" download="Curriculum Soribel Santos.pdf">Resume</a></div>
             </div>
 
             <div class="banner-img" data-aos="fade-up" data-aos-duration="2000">
@@ -125,7 +124,7 @@
                 <swiper-slide>
                     <div class="projects-item" id="projects1">
 
-                        <img src="IMG/pokedex.png" alt="projects mobil and desktop version" data-aos="zoom-in" data-aos-duration="2000">
+                        <img src="IMG/pokedex-mini.png" alt="projects mobil and desktop version" data-aos="zoom-in" data-aos-duration="2000">
 
                         <div class="projects-description">
                             <h3>Skills</h3>
@@ -149,7 +148,7 @@
                 <swiper-slide>
                     <div class="projects-item" id="projects1">
 
-                        <img src="IMG/diseños-responsive.png" alt="projects mobil and desktop version" data-aos="zoom-in" data-aos-duration="2000">
+                        <img src="IMG/agenda-mini.png" alt="projects mobil and desktop version" data-aos="zoom-in" data-aos-duration="2000">
 
                         <div class="projects-description">
                             <h3>Skills</h3>
@@ -160,12 +159,13 @@
                             </div>
       
                             <p class="projects-description-text">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat illum odio unde vero consequatur cumque possimus doloribus? Veritatis porro nihil nulla, assumenda rem cum ex non ratione quibusdam saepe magni.
+                                Lots of chores here and there, plenty of ways to get organized. To-do list, calendars and more, why not put it all together in one?
+                                That is what this Agenda does for you to help in the organization.
                             </p>
       
                             <div class="projects-btn-container">
-                                <button class="btn projects-btn"><a target="_blank" href="#">Agenda</a></button>
-                                <button class="btn projects-btn"><a target="_blank" href="#">GitHub</a></button>
+                                <button class="btn projects-btn"><a target="_blank" href="https://agenda-so-sori.vercel.app/">Agenda</a></button>
+                                <button class="btn projects-btn"><a target="_blank" href="https://github.com/So-Sori/Agenda">GitHub</a></button>
                             </div>
                         </div>
                     </div>
@@ -253,7 +253,7 @@
                 </div>
             </div>
             <div class="contact-copyright">
-                <p>&copy;2023 - 2024, Soribel S. Brito</p>
+                <p><span class="copy-name"></spanclass>&copy;Soribel S. Brito,</span> 2023 - 2024</p>
             </div>
         </div>
     </footer>
@@ -261,18 +261,22 @@
 
     <!-- Slider -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+
      <!-- Type Library *Animation -->
      <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+
      <!-- Animaciones -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+
     <!-- Formulario -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
         emailjs.init('2XXUQ3MNo9S3pPrzw');
     </script>
+
     <!-- ALERTAS -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="JS/main.js"></script>

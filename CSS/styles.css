@@ -17,6 +17,10 @@
 --ful-yellow:#FFF500;
 --opacity-yellow:#fff70098;
 }
+*{
+    list-style: none;
+    text-decoration: none;
+}
 html{
     scroll-behavior: smooth;
 }
