@@ -11,4 +11,4 @@ Present in a more orderly way who I am and my experiences in the beautiful world
    * **Animation:** [AOS](https://michalsnik.github.io/aos/)
    * **Alert:** [Sweetalert2](https://sweetalert2.github.io)
 # Result
-
+!["Porfolio Portada"](https://github.com/So-Sori/Proyecto-Porfolio/blob/main/IMG/porfolio-mini.png?raw=true)
