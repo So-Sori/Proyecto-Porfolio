@@ -100,7 +100,7 @@
         flex-wrap: nowrap;
     }
     .project-skill .bx{
-        font-size: 7vw;
+        font-size:5em;
         color: var(--russian-violet);
     }
     .projects-item img{
@@ -110,11 +110,19 @@
         align-items: center;
     }
     .projects-description{
-        width: 50%;
+        width: 100%;
         padding: 20px;
     }
     .projects-item .projects-description h3{
-        font-size: 5vw;
+        font-size: 4em;
+        margin: 0;
+    }
+    .projects-description-text{
+        width: 80%;
+        font-size: 1.2em;
+    }
+    .projects-btn-container{
+        width: 100%;
     }
     .about-me-container{
         width: 100%;
@@ -146,6 +154,7 @@
         height: auto;
         display: flex;
         padding: 30px;
+        flex-wrap: nowrap;
         align-items: center;
         justify-content: center;
     }
@@ -162,6 +171,7 @@
         width: 100%;
         min-width: 2em;
         margin: 0px;
+        flex-wrap: nowrap;
     }
     .bxl-linkedin-square,.bxl-instagram-alt,.bxl-github{
         font-size: 4vw;
@@ -169,6 +179,10 @@
     .contact-redes,.contact-copyright{
         width: 50%;
         text-align: center;
+    }
+    .contact-copyright{
+        width: 100%;
+        margin: auto;
     }
     .contact-btn-container{
         width: 100%;
@@ -189,6 +203,31 @@
         min-width: 85%;
         max-height:1000px;
         min-height:100px;
+        width: 100%;
+    }
+}
+@media screen and (min-width:2000px){
+    .projects-item{
+        flex-wrap: nowrap;
+    }
+    .project-skill .bx{
+        font-size:6em;
+        color: var(--russian-violet);
+    }
+    .projects-item img{
+        width: 65%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .projects-description-text, .projects-description-text h3{
+        width: 50%;
+        font-size: 1.3em;
+    }
+    .projects-item .projects-description h3{
+        font-size: 6em;
+    }
+    .projects-btn-container{
         width: 100%;
     }
 }

@@ -1,4 +1,11 @@
 /* CONTACT */
+.contact-container,.contact-more-info{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 footer, form,.contact-more-info,.contact-btn-container,.contact-container{
     flex-wrap: wrap;
     background-color: var(--honolulu-blue);
