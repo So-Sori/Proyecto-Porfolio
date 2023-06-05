@@ -1,4 +1,11 @@
 /* PROJECTS */
+.projects-description{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .projects-container,.projects-slider,.projects-description,.projects-item{
     background-color: var(--melon);
     flex-wrap: wrap;
@@ -25,6 +32,7 @@
     padding: 20px;
     line-height: 30px;
     color: var(--russian-violet);
+    font-weight: 500;
 }
 .projects-description-text p{
     text-align: justify;
@@ -34,6 +42,7 @@
     text-align: center;
     font-size: 10vw;
     text-shadow: 0px 5px  var(--russian-violet);
+    margin: 5px 0;
 }
 .projects-btn{
     padding: 10px 20px;
