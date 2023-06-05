@@ -34,7 +34,7 @@
     color: var(--russian-violet);
     font-weight: 500;
 }
-.projects-description-text p{
+.projects-description-text{
     text-align: justify;
     margin: auto;
 }

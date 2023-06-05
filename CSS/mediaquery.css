@@ -154,6 +154,7 @@
         height: auto;
         display: flex;
         padding: 30px;
+        flex-wrap: nowrap;
         align-items: center;
         justify-content: center;
     }
@@ -170,6 +171,7 @@
         width: 100%;
         min-width: 2em;
         margin: 0px;
+        flex-wrap: nowrap;
     }
     .bxl-linkedin-square,.bxl-instagram-alt,.bxl-github{
         font-size: 4vw;
@@ -177,6 +179,10 @@
     .contact-redes,.contact-copyright{
         width: 50%;
         text-align: center;
+    }
+    .contact-copyright{
+        width: 100%;
+        margin: auto;
     }
     .contact-btn-container{
         width: 100%;

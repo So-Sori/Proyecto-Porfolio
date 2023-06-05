@@ -31,7 +31,7 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 /* ELEMENTOS DISPLAY */
-.skills-container, .skills-items,.projects-container,.projects-slider,.projects-item,.project-skill,.projects-btn-slider,.projects-btn-slider ul,footer, form,.contact-more-info,.contact-btn-container,.contact-container,.contact-redes{
+.skills-container, .skills-items,.projects-container,.projects-slider,.projects-item,.project-skill,.projects-btn-slider,.projects-btn-slider ul,footer, form,.contact-btn-container,.contact-redes{
     width: 100%;
     height: auto;
     display: flex;
