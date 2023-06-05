@@ -117,9 +117,9 @@
         font-size: 4em;
         margin: 0;
     }
-    .projects-description-text, .projects-description-text h3{
+    .projects-description-text{
         width: 80%;
-        font-size: 1.3em;
+        font-size: 1.2em;
     }
     .projects-btn-container{
         width: 100%;

@@ -27,12 +27,12 @@
     font-size: 12vw;
     color: var(--russian-violet);
 }
-.projects-description-text, .projects-description-text h3{
+.projects-description-text{
     width: 100%;
     padding: 20px;
     line-height: 30px;
     color: var(--russian-violet);
-    font-weight: 500;
+    font-weight: 400;
 }
 .projects-description-text{
     text-align: justify;
