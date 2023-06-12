@@ -189,10 +189,10 @@
         transition: .5s;
     }
     .contact-btn{
-        width: 25%;
+        width: 20%;
     }
     .label_titulo{
-        width: 100%;
+        width: 85%;
         padding: 10px 20px;
     }
     footer form input{
@@ -229,5 +229,12 @@
     }
     .projects-btn-container{
         width: 100%;
+    }
+    .contact-btn{
+        width: 10%;
+    }
+    #form{
+        width: 60%;
+        height: auto;
     }
 }
