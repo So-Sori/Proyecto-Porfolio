@@ -1,15 +1,13 @@
 //TYPE JS TITULO
-// Setup and start animation!
-let bannerTitulo = document.querySelector(".banner-tittle");
-let typed = new Typed(bannerTitulo,{
+let bannerTitle = document.querySelector(".banner-tittle");
+let typed = new Typed(bannerTitle,{
   strings: ['Full Stack <br> Developer'],
   typeSpeed: 45,
   showCursor: false
   });
 
-// INTERACTIVIDAD BOTONES ABRIR Y CERRAR MENU
-let menuBtnHamburguesa = document.getElementById("menu-btn-hamburguesa");
-let menuBtnCerrar = document.getElementById("menu-btn-close");
+let btnMenuBurger = document.getElementById("menu-btn-burger");
+let btnMenuClose = document.getElementById("menu-btn-close");
 let menu = document.getElementById("menu");
 
 for (let i = 0; i < menu.children.length; i++) {
@@ -17,15 +15,15 @@ for (let i = 0; i < menu.children.length; i++) {
     menu.classList.remove("menu-visible");
   })
 }
-menuBtnHamburguesa.addEventListener("click", ()=> {
+btnMenuBurger.addEventListener("click", ()=> {
     menu.classList.add("menu-visible");
     
 })
-menuBtnCerrar.addEventListener("click", ()=> {
+btnMenuClose.addEventListener("click", ()=> {
     menu.classList.remove("menu-visible");
 })
 
-// FORMULARIO VERIFICACION
+// FORM VERIFICATION
 const btn = document.getElementById('btn-form');
 
 document.getElementById('form')

@@ -1,4 +1,3 @@
-/* SKILLS */
 .skills-container, .skills-items,.skill-item{
     flex-flow: row wrap;
     background-color: var(--ghost-white);
