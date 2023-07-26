@@ -56,6 +56,7 @@ document.getElementById('form')
       .then(() => {
         btn.value = 'Send Email';
         fullname.value = "";
+        email.value = "";
         document.getElementById('message').value = "";
         Swal.fire({
           icon: 'success',
