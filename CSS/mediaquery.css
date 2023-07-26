@@ -1,6 +1,5 @@
-/* RESPONSIVE DESKTOP */
 @media screen and (min-width:570px){
-    nav .menu-btn-hamburguesa{
+    nav .menu-btn-burger{
         display: none;
     }
     nav .menu .menu-btn-close{

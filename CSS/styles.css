@@ -8,7 +8,6 @@
 @import url(mediaquery.css);
 
 :root{
-/* CSS HEX */
 --honolulu-blue: #197bbdff;
 --ghost-white: #f2f4ffff;
 --ghost-white-transparent: #f2f4ff00;
@@ -30,7 +29,6 @@ body{
     color: var(--ghost-white);
     font-family: 'Montserrat', sans-serif;
 }
-/* ELEMENTOS DISPLAY */
 .skills-container, .skills-items,.projects-container,.projects-slider,.projects-item,.project-skill,.projects-btn-slider,.projects-btn-slider ul,footer, form,.contact-btn-container,.contact-redes{
     width: 100%;
     height: auto;
